@@ -166,13 +166,13 @@ def view_notes():
                 for student_id, notes in course["notes"].items():
                     print(f"Estudiante {course['students'][student_id]}: {notes}")
 
-# 🔹 Cerrar sesión
+ #Cerrar sesión
 def logout():
     global logged_user
     print(f"Sesión cerrada para {logged_user['name']}.")
     logged_user = None
 
-# 🔹 Menú principal
+ #Menú principal
 def main():
     while True:
         print("\n1. Registrar usuario")
